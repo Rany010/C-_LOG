@@ -39,7 +39,7 @@ void MDLog::init(const std::string &logName) {
       strLogFile += suffix;
 
     auto fileSink = std::make_shared<spdlog::sinks::daily_file_sink_mt>(
-        strLogFile, 0, 0); // 0小时0分钟，每天创建一个新的日志文件
+        strLogFile, 0, 0);
 #ifdef _DEBUG
     fileSink->set_level(spdlog::level::trace);
 #else

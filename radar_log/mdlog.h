@@ -1,5 +1,20 @@
-#ifndef MDLog_H
-#define MDLog_H
+/**
+ * @file mdlog.h
+ * @brief
+ * @author Rany010 (xuetao010@gmail.com)
+ * @version 1.0.0
+ * @date 2024-11-20
+ *
+ * @copyright Copyright (c) 2024
+ *
+ * @par 修改日志:
+ * <table>
+ * <tr><th>Date       <th>Version <th>Author  <th>Description
+ * <tr><td>2024-08-15 <td>1.0     <td>xuetao     <td>内容
+ * </table>
+ */
+
+#pragma once
 
 #include <map>
 #include <memory>
@@ -46,5 +61,3 @@ private:
   std::map<std::string, std::shared_ptr<spdlog::logger>> m_loggerMap;
   std::mutex m_mutex;
 };
-
-#endif // MDLog_H
